@@ -9,7 +9,6 @@ services:
       paths:
       - test/**
     rootDir: test
-services:
   - type: cron
     name: test2
     env: python
