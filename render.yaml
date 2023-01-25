@@ -1,21 +1,21 @@
-services:
-  - type: cron
-    name: test
-    env: python
-    schedule: "0/5 * * * *"
-    buildCommand: "true" # ensure it's a string
-    startCommand: python test.py
-    buildFilter:
-      paths:
-      - test/**
-    rootDir: test
-  - type: cron
-    name: test2
-    env: python
-    schedule: "0/5 * * * *"
-    buildCommand: "true" # ensure it's a string
-    startCommand: python test.py
-    buildFilter:
-      paths:
-       - test2/**
-    rootDir: test2
+# services:
+#   - type: cron
+#     name: test
+#     env: python
+#     schedule: "0/5 * * * *"
+#     buildCommand: "true" # ensure it's a string
+#     startCommand: python test.py
+#     buildFilter:
+#       paths:
+#       - test/**
+#     rootDir: test
+#   - type: cron
+#     name: test2
+#     env: python
+#     schedule: "0/5 * * * *"
+#     buildCommand: "true" # ensure it's a string
+#     startCommand: python test.py
+#     buildFilter:
+#       paths:
+#        - test2/**
+#     rootDir: test2
