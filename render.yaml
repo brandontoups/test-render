@@ -5,7 +5,7 @@ services:
     schedule: "0/5 * * * *"
     buildCommand: "true" # ensure it's a string
     startCommand: python test.py
-    buildFilters:
+    buildFilter:
       paths:
       - test/**
     rootDir: test
