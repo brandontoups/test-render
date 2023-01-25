@@ -1,5 +1,5 @@
 services:
-- type: cron
+  - type: cron
     name: test
     env: python
     schedule: "0/5 * * * *"
